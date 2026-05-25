@@ -1,15 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Mail, MapPin, Phone, Instagram, Linkedin, Facebook } from "lucide-react";
+import {
+  Mail,
+  MapPin,
+  Phone,
+  Instagram,
+  Linkedin,
+  Facebook,
+} from "lucide-react";
 import Button from "../Button";
 import { Logo } from "../Logo";
+import { useToast } from "../../../context/ToastContext";
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+  const { showWhatsAppAdvisorToast } = useToast();
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Subscription received. Thank you for connecting with SN Constructions.");
+    showWhatsAppAdvisorToast("Newsletter subscription feature");
   };
 
   return (
@@ -19,18 +28,20 @@ export const Footer: React.FC = () => {
       <div className="absolute top-12 left-0 w-80 h-80 rounded-full bg-brand-blue/5 blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 relative z-10">
-        
         {/* Brand Information Column */}
         <div className="md:col-span-5 flex flex-col gap-6">
           <Logo />
           <p className="font-urbanist text-gray-400 text-sm leading-relaxed max-w-sm">
-            We are a team of passionate young minds taking on the challenges of modern building. Guided by structural accuracy and clean design, we craft absolute quality across interiors, construction, and planning. Trust the process, we build your dream.
+            We are a team of passionate young minds taking on the challenges of
+            modern building. Guided by structural accuracy and clean design, we
+            craft absolute quality across interiors, construction, and planning.
+            Trust the process, we build your dream.
           </p>
 
           {/* Social Profiles */}
           <div className="flex items-center gap-4">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/snc__interiors/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram Profile Link"
@@ -66,17 +77,26 @@ export const Footer: React.FC = () => {
           </span>
           <ul className="flex flex-col gap-3 font-urbanist text-sm">
             <li>
-              <Link to="/services" className="text-gray-400 hover:text-brand-orange transition-colors duration-200">
+              <Link
+                to="/services"
+                className="text-gray-400 hover:text-brand-orange transition-colors duration-200"
+              >
                 Premium Construction
               </Link>
             </li>
             <li>
-              <Link to="/services" className="text-gray-400 hover:text-brand-orange transition-colors duration-200">
+              <Link
+                to="/services"
+                className="text-gray-400 hover:text-brand-orange transition-colors duration-200"
+              >
                 Bespoke Interiors
               </Link>
             </li>
             <li>
-              <Link to="/services" className="text-gray-400 hover:text-brand-orange transition-colors duration-200">
+              <Link
+                to="/services"
+                className="text-gray-400 hover:text-brand-orange transition-colors duration-200"
+              >
                 Architectural Planning
               </Link>
             </li>
@@ -90,22 +110,34 @@ export const Footer: React.FC = () => {
           </span>
           <ul className="flex flex-col gap-3 font-urbanist text-sm">
             <li>
-              <Link to="/" className="text-gray-400 hover:text-brand-blue transition-colors duration-200">
+              <Link
+                to="/"
+                className="text-gray-400 hover:text-brand-blue transition-colors duration-200"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about" className="text-gray-400 hover:text-brand-blue transition-colors duration-200">
+              <Link
+                to="/about"
+                className="text-gray-400 hover:text-brand-blue transition-colors duration-200"
+              >
                 Our Story
               </Link>
             </li>
             <li>
-              <Link to="/projects" className="text-gray-400 hover:text-brand-blue transition-colors duration-200">
+              <Link
+                to="/projects"
+                className="text-gray-400 hover:text-brand-blue transition-colors duration-200"
+              >
                 Featured Portfolios
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="text-gray-400 hover:text-brand-blue transition-colors duration-200">
+              <Link
+                to="/contact"
+                className="text-gray-400 hover:text-brand-blue transition-colors duration-200"
+              >
                 Consultation Hub
               </Link>
             </li>
@@ -118,7 +150,8 @@ export const Footer: React.FC = () => {
             Elite Updates
           </span>
           <p className="font-urbanist text-gray-400 text-xs leading-relaxed">
-            Subscribe to receive our seasonal architectural briefings and finished build portfolios.
+            Subscribe to receive our seasonal architectural briefings and
+            finished build portfolios.
           </p>
 
           <form onSubmit={handleSubscribe} className="flex flex-col gap-2">
@@ -151,13 +184,13 @@ export const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-
       </div>
 
       {/* Footer Bottom copyright and layout section */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-urbanist text-gray-500 relative z-10">
         <div>
-          © {currentYear} SN Constructions. All physical architectural rights reserved.
+          © {currentYear} SN Constructions. All physical architectural rights
+          reserved.
         </div>
         <div className="flex items-center gap-6">
           <span className="hover:text-white transition-colors duration-200">

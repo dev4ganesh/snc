@@ -14,10 +14,14 @@ import {
   CheckCircle,
   Building2,
   Calendar,
-  MapPin
+  MapPin,
 } from "lucide-react";
 import Button from "../../components/common/Button";
-import { SERVICES_DATA, PROJECTS_DATA, TESTIMONIALS_DATA } from "../../constants";
+import {
+  SERVICES_DATA,
+  PROJECTS_DATA,
+  TESTIMONIALS_DATA,
+} from "../../constants";
 
 export const Home: React.FC = () => {
   // Stagger animation variations
@@ -25,8 +29,8 @@ export const Home: React.FC = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.15 }
-    }
+      transition: { staggerChildren: 0.15 },
+    },
   };
 
   const itemVariants = {
@@ -34,13 +38,12 @@ export const Home: React.FC = () => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.6, ease: "easeOut" }
-    }
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
   };
 
   return (
     <div className="relative w-full">
-      
       {/* 1. Cinematic Full-Screen Hero Section */}
       <section className="relative h-[calc(100vh-88px)] min-h-[600px] w-full flex items-center bg-slate-950 overflow-hidden">
         {/* Cinematic Backdrop Image overlaid with precise gradients */}
@@ -61,7 +64,6 @@ export const Home: React.FC = () => {
 
         {/* Hero Core Copy & Card CTA */}
         <div className="max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10 items-center">
-          
           {/* Lead Copy Panel */}
           <div className="lg:col-span-7 flex flex-col gap-6 text-left">
             <motion.div
@@ -94,7 +96,9 @@ export const Home: React.FC = () => {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="font-urbanist text-gray-400 text-base md:text-lg leading-relaxed max-w-xl mb-10"
             >
-              We are a group of passionate, driven young professionals taking on the challenge of modern architecture. Delivering meticulous craftsmanship across interiors, construction, and planning.
+              We are a group of passionate, driven young professionals taking on
+              the challenge of modern architecture. Delivering meticulous
+              craftsmanship across interiors, construction, and planning.
             </motion.p>
 
             <motion.div
@@ -138,8 +142,12 @@ export const Home: React.FC = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between">
-                      <span className="font-bold text-sm text-white">Elysium Mansion</span>
-                      <span className="text-xs font-mono text-brand-orange font-semibold">94% Done</span>
+                      <span className="font-bold text-sm text-white">
+                        2 BHk Duplex villa
+                      </span>
+                      <span className="text-xs font-mono text-brand-orange font-semibold">
+                        94% Done
+                      </span>
                     </div>
                     <div className="w-full bg-slate-800 h-1 rounded-full mt-2 overflow-hidden">
                       <div className="bg-brand-orange h-full w-[94%]" />
@@ -153,8 +161,12 @@ export const Home: React.FC = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between">
-                      <span className="font-bold text-sm text-white">Aurora Spires</span>
-                      <span className="text-xs font-mono text-brand-blue font-semibold">72% Done</span>
+                      <span className="font-bold text-sm text-white">
+                        Harmony city
+                      </span>
+                      <span className="text-xs font-mono text-brand-blue font-semibold">
+                        72% Done
+                      </span>
                     </div>
                     <div className="w-full bg-slate-800 h-1 rounded-full mt-2 overflow-hidden">
                       <div className="bg-brand-blue h-full w-[72%]" />
@@ -172,14 +184,12 @@ export const Home: React.FC = () => {
               </div>
             </div>
           </motion.div>
-
         </div>
       </section>
 
       {/* 2. Company Introduction Symmetrical Row */}
       <section className="py-24 max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          
           <motion.div
             initial={{ opacity: 0, x: -25 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -199,7 +209,9 @@ export const Home: React.FC = () => {
 
             {/* Float Badge */}
             <div className="absolute -bottom-6 -right-6 glassmorphism p-5 rounded-xl z-20 hidden sm:block max-w-[200px] border border-white/10">
-              <span className="font-montserrat font-extrabold text-3xl text-brand-orange block">2+</span>
+              <span className="font-montserrat font-extrabold text-3xl text-brand-orange block">
+                2+
+              </span>
               <span className="font-urbanist text-xs text-gray-300 font-bold tracking-wide mt-1 block">
                 Years of Dynamic Craftsmanship
               </span>
@@ -220,43 +232,57 @@ export const Home: React.FC = () => {
               We Design and Engineer High-End Architectural Ecosystems
             </h2>
             <p className="font-urbanist text-gray-400 text-sm md:text-base leading-relaxed">
-              At SN Constructions, we believe a build is a legacy. We collaborate with internationally acclaimed architects, premium material artisans, and precise structural planners to execute bespoke concepts that are visually arresting yet structurally immortal.
+              At SN Constructions, we believe a build is a legacy. We
+              collaborate with internationally acclaimed architects, premium
+              material artisans, and precise structural planners to execute
+              bespoke concepts that are visually arresting yet structurally
+              immortal.
             </p>
 
             <div className="grid grid-cols-2 gap-6 mt-4">
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-brand-orange shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-sm text-white">Full-Stack Delivery</h4>
-                  <p className="font-urbanist text-xs text-gray-400 mt-1">From blueprint planning to absolute structural handover.</p>
+                  <h4 className="font-bold text-sm text-white">
+                    Full-Stack Delivery
+                  </h4>
+                  <p className="font-urbanist text-xs text-gray-400 mt-1">
+                    From blueprint planning to absolute structural handover.
+                  </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-sm text-white">Parametric Costing</h4>
-                  <p className="font-urbanist text-xs text-gray-400 mt-1">Airtight material procurement with zero safety compromise.</p>
+                  <h4 className="font-bold text-sm text-white">
+                    Parametric Costing
+                  </h4>
+                  <p className="font-urbanist text-xs text-gray-400 mt-1">
+                    Airtight material procurement with zero safety compromise.
+                  </p>
                 </div>
               </div>
             </div>
 
             <div className="mt-6 border-t border-white/5 pt-6">
               <Link to="/about">
-                <Button variant="outline" size="md" icon={<ArrowRight className="w-4 h-4 text-brand-orange" />}>
+                <Button
+                  variant="outline"
+                  size="md"
+                  icon={<ArrowRight className="w-4 h-4 text-brand-orange" />}
+                >
                   Learn Our Story
                 </Button>
               </Link>
             </div>
           </motion.div>
-
         </div>
       </section>
 
       {/* 3. Services Fast-Access Showcase */}
       <section className="py-24 bg-slate-900/45 border-y border-white/5">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
-          
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
             <div className="flex flex-col gap-4 text-left">
               <span className="font-montserrat text-xs tracking-[0.3em] font-extrabold text-brand-blue uppercase">
@@ -267,7 +293,10 @@ export const Home: React.FC = () => {
               </h2>
             </div>
             <Link to="/services">
-              <Button variant="outline" icon={<ArrowRight className="w-4 h-4 text-brand-orange" />}>
+              <Button
+                variant="outline"
+                icon={<ArrowRight className="w-4 h-4 text-brand-orange" />}
+              >
                 All Services
               </Button>
             </Link>
@@ -290,9 +319,15 @@ export const Home: React.FC = () => {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-brand-orange/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
                 <div className="p-3.5 rounded-xl bg-slate-950 border border-white/5 w-fit group-hover:bg-brand-orange group-hover:text-white transition-all duration-300 mb-6">
-                  {svc.id === "residential" && <Building2 className="w-6 h-6 text-brand-orange group-hover:text-white" />}
-                  {svc.id === "commercial" && <Activity className="w-6 h-6 text-brand-blue group-hover:text-white" />}
-                  {svc.id === "interior" && <PenTool className="w-6 h-6 text-brand-orange group-hover:text-white" />}
+                  {svc.id === "residential" && (
+                    <Building2 className="w-6 h-6 text-brand-orange group-hover:text-white" />
+                  )}
+                  {svc.id === "commercial" && (
+                    <Activity className="w-6 h-6 text-brand-blue group-hover:text-white" />
+                  )}
+                  {svc.id === "interior" && (
+                    <PenTool className="w-6 h-6 text-brand-orange group-hover:text-white" />
+                  )}
                 </div>
 
                 <h3 className="font-montserrat font-bold text-lg text-white mb-3 group-hover:text-brand-orange transition-colors">
@@ -304,7 +339,10 @@ export const Home: React.FC = () => {
 
                 <ul className="flex flex-col gap-2.5 border-t border-white/5 pt-5 mb-6">
                   {svc.benefits.slice(0, 2).map((b, i) => (
-                    <li key={i} className="flex items-center gap-2 text-xs font-urbanist text-gray-300">
+                    <li
+                      key={i}
+                      className="flex items-center gap-2 text-xs font-urbanist text-gray-300"
+                    >
                       <span className="w-1 h-1 rounded-full bg-brand-orange" />
                       <span>{b}</span>
                     </li>
@@ -321,13 +359,11 @@ export const Home: React.FC = () => {
               </motion.div>
             ))}
           </motion.div>
-
         </div>
       </section>
 
       {/* 4. Why Choose Us (Symmetry Philosophy Metrics) */}
       <section className="py-24 max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-        
         {/* Left Side: Brand values list */}
         <div className="lg:col-span-6 flex flex-col gap-6 text-left">
           <span className="font-montserrat text-xs tracking-[0.3em] font-extrabold text-brand-orange uppercase">
@@ -337,7 +373,10 @@ export const Home: React.FC = () => {
             How We Safeguard and Honor Your Capital Investments
           </h2>
           <p className="font-urbanist text-gray-400 text-sm md:text-base leading-relaxed">
-            Construction is a high-stake commitment. We design our organizational process around mitigating risks, managing supply chains precisely, and ensuring total transparency during the entire implementation lifecycle.
+            Construction is a high-stake commitment. We design our
+            organizational process around mitigating risks, managing supply
+            chains precisely, and ensuring total transparency during the entire
+            implementation lifecycle.
           </p>
 
           <div className="flex flex-col gap-6 mt-4">
@@ -346,9 +385,13 @@ export const Home: React.FC = () => {
                 <Shield className="w-5 h-5" />
               </div>
               <div>
-                <h4 className="font-bold text-base text-white">Full Post-Build Bulletproof Warranty</h4>
+                <h4 className="font-bold text-base text-white">
+                  Full Post-Build Bulletproof Warranty
+                </h4>
                 <p className="font-urbanist text-sm text-gray-400 mt-1">
-                  Our materials and structural methods undergo stress assessments, backed by our 15-year comprehensive warranty coverage, ensuring peace of mind.
+                  Our materials and structural methods undergo stress
+                  assessments, backed by our 15-year comprehensive warranty
+                  coverage, ensuring peace of mind.
                 </p>
               </div>
             </div>
@@ -358,9 +401,13 @@ export const Home: React.FC = () => {
                 <Award className="w-5 h-5" />
               </div>
               <div>
-                <h4 className="font-bold text-base text-white">LEED Golden Green Credentials</h4>
+                <h4 className="font-bold text-base text-white">
+                  LEED Golden Green Credentials
+                </h4>
                 <p className="font-urbanist text-sm text-gray-400 mt-1">
-                  We formulate low-emission, highly thermal-efficient layout frames, lowering heating and cooling bills by up to 35% across real estates.
+                  We formulate low-emission, highly thermal-efficient layout
+                  frames, lowering heating and cooling bills by up to 35% across
+                  real estates.
                 </p>
               </div>
             </div>
@@ -370,9 +417,13 @@ export const Home: React.FC = () => {
                 <Compass className="w-5 h-5" />
               </div>
               <div>
-                <h4 className="font-bold text-base text-white">BIM Parametric Holograph Blueprints</h4>
+                <h4 className="font-bold text-base text-white">
+                  BIM Parametric Holograph Blueprints
+                </h4>
                 <p className="font-urbanist text-sm text-gray-400 mt-1">
-                  Walk through your residential build in virtual reality with exact light simulations, ensuring changes are finalized before materials are ordered.
+                  Walk through your residential build in virtual reality with
+                  exact light simulations, ensuring changes are finalized before
+                  materials are ordered.
                 </p>
               </div>
             </div>
@@ -383,7 +434,7 @@ export const Home: React.FC = () => {
         <div className="lg:col-span-6 relative">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/5 aspect-[4/3] glow-blue">
             <img
-              src="https://images.unsplash.com/photo-1503387762-592ded58c454?auto=format&fit=crop&w=1000&q=80"
+              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1000&q=80"
               alt="Elite Architectural Blueprint Review"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -399,23 +450,29 @@ export const Home: React.FC = () => {
             </span>
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <span className="font-montserrat text-2xl font-extrabold text-white">100%</span>
-                <span className="font-urbanist text-[11px] text-gray-400 block mt-1">On-Time Handover</span>
+                <span className="font-montserrat text-2xl font-extrabold text-white">
+                  100%
+                </span>
+                <span className="font-urbanist text-[11px] text-gray-400 block mt-1">
+                  On-Time Handover
+                </span>
               </div>
               <div>
-                <span className="font-montserrat text-2xl font-extrabold text-white">0</span>
-                <span className="font-urbanist text-[11px] text-gray-400 block mt-1">Safety Incidents</span>
+                <span className="font-montserrat text-2xl font-extrabold text-white">
+                  0
+                </span>
+                <span className="font-urbanist text-[11px] text-gray-400 block mt-1">
+                  Safety Incidents
+                </span>
               </div>
             </div>
           </div>
         </div>
-
       </section>
 
       {/* 5. Highlight Featured Projects Row */}
       <section className="py-24 bg-slate-900/45 border-y border-white/5">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
-          
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
             <div className="flex flex-col gap-4 text-left">
               <span className="font-montserrat text-xs tracking-[0.3em] font-extrabold text-brand-orange uppercase">
@@ -426,9 +483,7 @@ export const Home: React.FC = () => {
               </h2>
             </div>
             <Link to="/projects">
-              <Button variant="outline">
-                View All Portfolios
-              </Button>
+              <Button variant="outline">View All Portfolios</Button>
             </Link>
           </div>
 
@@ -474,7 +529,9 @@ export const Home: React.FC = () => {
                     </p>
 
                     <div className="mt-4 pt-4 border-t border-white/10 hidden group-hover:flex items-center justify-between text-xs text-brand-orange">
-                      <span className="font-mono tracking-wider font-semibold">VIEW PORTFOLIO</span>
+                      <span className="font-mono tracking-wider font-semibold">
+                        VIEW PORTFOLIO
+                      </span>
                       <ArrowRight className="w-3.5 h-3.5 translate-x-0 group-hover:translate-x-1.5 transition-transform" />
                     </div>
                   </div>
@@ -482,7 +539,6 @@ export const Home: React.FC = () => {
               </motion.div>
             ))}
           </div>
-
         </div>
       </section>
 
@@ -492,7 +548,6 @@ export const Home: React.FC = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-orange/5 blur-[120px] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-2 lg:grid-cols-4 gap-12 text-center relative z-10">
-          
           <div className="flex flex-col gap-2">
             <span className="font-montserrat font-extrabold text-4xl sm:text-5xl text-brand-orange">
               25+
@@ -528,7 +583,6 @@ export const Home: React.FC = () => {
               DREAM DELIVERY SATISFACTION
             </span>
           </div>
-
         </div>
       </section>
 
@@ -542,7 +596,8 @@ export const Home: React.FC = () => {
             Trust Formulated Through Execution
           </h2>
           <p className="font-urbanist text-gray-400 text-sm max-w-lg">
-            We partner with discerning private families, corporate assets developers, and elite managers globally.
+            We partner with discerning private families, corporate assets
+            developers, and elite managers globally.
           </p>
         </div>
 
@@ -577,9 +632,12 @@ export const Home: React.FC = () => {
                   referrerPolicy="no-referrer"
                 />
                 <div>
-                  <h4 className="font-montserrat font-bold text-sm text-white">{t.name}</h4>
+                  <h4 className="font-montserrat font-bold text-sm text-white">
+                    {t.name}
+                  </h4>
                   <span className="font-urbanist text-xs text-gray-400 block mt-0.5">
-                    {t.role}, <span className="text-brand-orange">{t.company}</span>
+                    {t.role},{" "}
+                    <span className="text-brand-orange">{t.company}</span>
                   </span>
                 </div>
               </div>
@@ -611,12 +669,18 @@ export const Home: React.FC = () => {
               Let's Co-Create Your Next Landmark Masterwork
             </h2>
             <p className="font-urbanist text-gray-300 text-sm md:text-base leading-relaxed">
-              Connect with our principal estimator and managing spatial designer. We provide full high-definition parametric costing grids and conceptual blueprint layouts.
+              Connect with our principal estimator and managing spatial
+              designer. We provide full high-definition parametric costing grids
+              and conceptual blueprint layouts.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mt-4">
               <Link to="/contact">
-                <Button variant="primary" size="lg" icon={<ArrowRight className="w-4 h-4" />}>
+                <Button
+                  variant="primary"
+                  size="lg"
+                  icon={<ArrowRight className="w-4 h-4" />}
+                >
                   Book Private Consult
                 </Button>
               </Link>
@@ -629,7 +693,6 @@ export const Home: React.FC = () => {
           </div>
         </div>
       </section>
-
     </div>
   );
 };
