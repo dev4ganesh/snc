@@ -170,40 +170,39 @@ export const PROJECTS_DATA: ProjectItem[] = [
     ],
   },
 ];
-
 export const TESTIMONIALS_DATA: TestimonialItem[] = [
   {
     id: "test-1",
-    name: "Sir Alistair Sterling",
-    role: "Chairman",
-    company: "Sterling Asset Management",
+    name: "Vishnu",
+    role: "Homeowner - Gulzarpet",
+    company: "Anantapur",
     comment:
-      "SN Constructions executed our corporate manor with absolute architectural perfection. Their timing was flawless, and the spatial flow they designed continues to stun our stakeholders.",
+      "SN Constructions handled our residential duplex build in Georgepet with outstanding precision. Their young, energetic team was friendly, highly adaptive, and completed our gorgeous custom interiors ahead of schedule.",
     rating: 5,
     avatarUrl:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80",
+      "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?auto=format&fit=crop&w=150&h=150&q=80",
   },
   {
     id: "test-2",
-    name: "Elena Rostova",
-    role: "Lead Architect & Designer",
-    company: "Rostova Spatial Design Studio",
+    name: "Praveen Kumar Reddy",
+    role: "Managing Director",
+    company: "Reddy Minerals & Exports, Anantapur",
     comment:
-      "As an architect, I am extremely demanding of construction partners. SN Constructions doesn't just read drawings; they respect spatial integrity and manifest premium finishes perfectly.",
+      "Their modern planning layouts and structural integrity are top-tier. From advanced 3D walk-through planning to the final premium ceiling installation, the SN team executed our workspace with perfection.",
     rating: 5,
     avatarUrl:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&h=150&q=80",
+      "https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=150&h=150&q=80",
   },
   {
     id: "test-3",
-    name: "Marcus Vance",
-    role: "Principal Developer",
-    company: "Vanguard High-Rise Developments",
+    name: "Tharun",
+    role: "Homeowner - LakshmiNagar",
+    company: "Anantapur",
     comment:
-      "Cost-engineering combined with luxury build is a rare art form. The SN team protected our timeline and budget margins without compromising an ounce of material luxury on the Obsidian Monolith.",
+      "We wanted a signature, sleek, high-contrast cafe ambiance on Court Road. SN Constructions delivered structural planning and bespoke interior finishing that completely exceeded our high expectations.",
     rating: 5,
     avatarUrl:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80",
+      "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?auto=format&fit=crop&w=150&h=150&q=80",
   },
 ];
 
