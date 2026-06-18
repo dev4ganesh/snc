@@ -53,7 +53,7 @@ export const Services: React.FC = () => {
 
   const faqs = [
     {
-      q: "Does SN Constructions handle building permits and local municipal approvals?",
+      q: "Does Arka infra & interiors handle building permits and local municipal approvals?",
       a: "Yes. Our team handles the entire local municipal clearance process, town planning approvals, zoning compliance, and structural clearances to validate your design plans rapidly and legally.",
     },
     {

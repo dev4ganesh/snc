@@ -180,7 +180,7 @@ export const Footer: React.FC = () => {
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-3.5 h-3.5 text-brand-blue shrink-0" />
-              <span>shrinidhiconstruction99@gmail.com</span>
+              <span>arkainfra99@gmail.com</span>
             </div>
           </div>
         </div>
@@ -189,8 +189,8 @@ export const Footer: React.FC = () => {
       {/* Footer Bottom copyright and layout section */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-urbanist text-gray-500 relative z-10">
         <div>
-          © {currentYear} SN Constructions. All physical architectural rights
-          reserved.
+          © {currentYear} Arka infra & interiors. All physical architectural
+          rights reserved.
         </div>
         <div className="flex items-center gap-6">
           <span className="hover:text-white transition-colors duration-200">

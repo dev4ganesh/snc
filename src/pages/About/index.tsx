@@ -54,11 +54,11 @@ export const About: React.FC = () => {
             Harsha's Vision to Redefine Building Standards
           </h2>
           <p className="font-urbanist text-gray-400 text-sm md:text-base leading-relaxed">
-            Starting SN Constructions just 2 years back, our young team set out
-            with a bold vision. We realized that clients deserve absolute
-            collaboration, flawless communication, and superior craftsmanship.
-            We focus on physical excellence across interiors, planning, and
-            structural construction.
+            Starting Arka infra & interiors just 2 years back, our young team
+            set out with a bold vision. We realized that clients deserve
+            absolute collaboration, flawless communication, and superior
+            craftsmanship. We focus on physical excellence across interiors,
+            planning, and structural construction.
           </p>
           <p className="font-urbanist text-gray-400 text-sm md:text-base leading-relaxed">
             We don't believe in old, slow, rigid workflows. As young innovators
@@ -149,9 +149,9 @@ export const About: React.FC = () => {
             </h3>
             <p className="font-urbanist text-gray-400 text-sm leading-relaxed">
               To remain a global, pristine symbol of luxury building, where the
-              signature of SN Constructions signals absolute trust, aesthetic
-              dominance, sustainable carbon neutrality, and lifetime structural
-              safety in high-end real estates.
+              signature of Arka infra & interiorssignals absolute trust,
+              aesthetic dominance, sustainable carbon neutrality, and lifetime
+              structural safety in high-end real estates.
             </p>
           </div>
         </div>

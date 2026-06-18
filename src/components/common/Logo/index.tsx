@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logoSvg from "../../../assets/sn_logo.png";
+import logoSvg from "../../../assets/arka_name-logo.png";
 
 interface LogoProps {
   className?: string;
@@ -16,7 +16,7 @@ export const Logo = ({
       <div className="relative">
         <img
           src={logoSvg}
-          alt="SN Constructions"
+          alt="Arka infra & interiors"
           className={`${className} object-contain transition-transform duration-500 group-hover:scale-105`}
           referrerPolicy="no-referrer"
         />
@@ -27,8 +27,8 @@ export const Logo = ({
       {showText && (
         <div className="flex flex-col">
           <span className="text-xl font-bold tracking-tighter uppercase font-montserrat leading-none transition-colors duration-300">
-            <span className="text-[#ff6b00]">SN</span>{" "}
-            <span className="text-[#f8fafc]">Constructions</span>
+            <span className="text-[#ff6b00]">Arka</span>{" "}
+            <span className="text-[#f8fafc]">infra & interiors</span>
           </span>
           <span className="text-[8px] font-bold tracking-[0.25em] text-gray-400 uppercase mt-1 transition-all duration-300 group-hover:text-gray-300">
             Interiors • Plan • Build

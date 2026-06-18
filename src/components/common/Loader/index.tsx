@@ -11,7 +11,7 @@ export const Loader: React.FC = () => {
           transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
           className="absolute w-24 h-24 border-2 border-transparent border-t-brand-orange border-b-brand-blue rounded-full"
         />
-        
+
         {/* Animated inner ring */}
         <motion.div
           animate={{ rotate: -360 }}
@@ -26,7 +26,7 @@ export const Loader: React.FC = () => {
           transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
           className="flex items-center justify-center font-montserrat font-bold tracking-widest text-white text-lg z-10"
         >
-          SN
+          Arka
         </motion.div>
       </div>
 
@@ -37,7 +37,7 @@ export const Loader: React.FC = () => {
         className="mt-8 text-center"
       >
         <span className="font-montserrat text-xs tracking-[0.3em] text-white uppercase font-bold">
-          SN CONSTRUCTIONS
+          Arka infra & interiors
         </span>
         <p className="font-urbanist text-gray-500 text-xs mt-1 tracking-wide">
           Architectural Symmetry & Structural Integrity

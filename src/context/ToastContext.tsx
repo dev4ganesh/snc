@@ -50,7 +50,7 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({
   const showWhatsAppAdvisorToast = useCallback(
     (featureName: string) => {
       const defaultMsg = `The ${featureName} is currently offline for system upgrades. Please connect with our direct WhatsApp Chat Advisor for immediate assistance!`;
-      const messageText = `Hi SN Constructions team! I am inquiring about ${featureName} and would like to get a direct briefing/consultation.`;
+      const messageText = `Hi Arka infra & interiors team! I am inquiring about ${featureName} and would like to get a direct briefing/consultation.`;
       const waUrl = `https://wa.me/919154966677?text=${encodeURIComponent(messageText)}`;
 
       showToast({

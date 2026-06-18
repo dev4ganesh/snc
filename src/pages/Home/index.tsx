@@ -232,7 +232,7 @@ export const Home: React.FC = () => {
               We Design and Engineer High-End Architectural Ecosystems
             </h2>
             <p className="font-urbanist text-gray-400 text-sm md:text-base leading-relaxed">
-              At SN Constructions, we believe a build is a legacy. We
+              At Arka infra & interiors, we believe a build is a legacy. We
               collaborate with internationally acclaimed architects, premium
               material artisans, and precise structural planners to execute
               bespoke concepts that are visually arresting yet structurally

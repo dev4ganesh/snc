@@ -28,7 +28,7 @@ export const Navbar: React.FC = () => {
     { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
     { name: "Projects", path: "/projects" },
-    { name: "Contact", path: "/contact" }
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -41,7 +41,6 @@ export const Navbar: React.FC = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-          
           {/* Brand Logo Layout */}
           <Logo />
 
@@ -59,18 +58,24 @@ export const Navbar: React.FC = () => {
                   to={link.path}
                   className={({ isActive }) =>
                     `relative py-2 text-sm font-urbanist font-semibold tracking-wider transition-colors duration-300 ${
-                      isActive ? "text-brand-orange" : "text-gray-300 hover:text-white"
+                      isActive
+                        ? "text-brand-orange"
+                        : "text-gray-300 hover:text-white"
                     }`
                   }
                 >
                   {link.name}
-                  
+
                   {/* Active Indicator Underline */}
                   {isActive && (
                     <motion.span
                       layoutId="nav-active-line"
                       className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-brand-orange to-brand-blue"
-                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 380,
+                        damping: 30,
+                      }}
                     />
                   )}
                 </NavLink>
@@ -81,11 +86,11 @@ export const Navbar: React.FC = () => {
           {/* Action Quick Contact Hook Option */}
           <div className="hidden md:flex items-center gap-6">
             <a
-              href="mailto:shrinidhiconstruction99@gmail.com"
+              href="mailto:arkainfra99@gmail.com"
               className="flex items-center gap-2 text-xs font-mono text-gray-400 hover:text-brand-orange transition-colors duration-300 normal-case"
             >
               <Mail className="w-3.5 h-3.5 text-brand-orange" />
-              shrinidhiconstruction99@gmail.com
+              arkainfra99@gmail.com
             </a>
             <Button
               variant="outline"
@@ -104,9 +109,12 @@ export const Navbar: React.FC = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden flex items-center justify-center w-10 h-10 rounded-lg bg-white/5 border border-white/10 text-white cursor-pointer focus:outline-none"
           >
-            {isOpen ? <X className="w-5 h-5 text-brand-orange" /> : <Menu className="w-5 h-5" />}
+            {isOpen ? (
+              <X className="w-5 h-5 text-brand-orange" />
+            ) : (
+              <Menu className="w-5 h-5" />
+            )}
           </button>
-
         </div>
       </header>
 
@@ -167,10 +175,10 @@ export const Navbar: React.FC = () => {
                   Email Us
                 </span>
                 <a
-                  href="mailto:shrinidhiconstruction99@gmail.com"
+                  href="mailto:arkainfra99@gmail.com"
                   className="text-base font-mono text-white hover:text-brand-orange transition-colors break-all"
                 >
-                  shrinidhiconstruction99@gmail.com
+                  arkainfra99@gmail.com
                 </a>
               </div>
 
@@ -188,7 +196,10 @@ export const Navbar: React.FC = () => {
                 className="w-full justify-center text-center mt-2"
                 onClick={() => setIsOpen(false)}
               >
-                <Link to="/contact" className="w-full h-full text-center flex items-center justify-center">
+                <Link
+                  to="/contact"
+                  className="w-full h-full text-center flex items-center justify-center"
+                >
                   Consultation
                 </Link>
               </Button>

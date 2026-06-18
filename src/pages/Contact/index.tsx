@@ -41,7 +41,7 @@ export const Contact: React.FC = () => {
     e.preventDefault();
 
     // Construct rich whatsapp message template
-    const messageText = `*New Project Inquiry - SN Constructions*
+    const messageText = `*New Project Inquiry - Arka infra & interiors*
 ----------------------------------------
 *Name:* ${formData.fullName}
 *Email:* ${formData.email}
@@ -149,7 +149,7 @@ _Trust the process, we build your dream._`;
                   Digital Mail Curators
                 </h4>
                 <p className="text-gray-400 text-xs mt-1 leading-relaxed">
-                  shrinidhiconstruction99@gmail.com
+                  arkainfra99@gmail.com
                 </p>
               </div>
             </div>
@@ -466,7 +466,7 @@ _Trust the process, we build your dream._`;
         href="https://wa.me/919154966677?text=Hi%20SN%20Constructions,%20I%20would%20like%20to%20know%20more%20about%20your%20design%20and%20construction%20services!"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Direct message SN Constructions on WhatsApp"
+        aria-label="Direct message Arka Construction & Infra on WhatsApp"
         className="fixed bottom-24 right-8 z-40 bg-zinc-950/90 border border-white/15 h-12 pl-4 pr-5 rounded-full flex items-center justify-center gap-2.5 text-xs text-white hover:text-brand-orange cursor-pointer transition-all hover:border-brand-orange shadow-2xl group"
         style={{ boxShadow: "0 10px 25px -5px rgba(0,0,0,0.4)" }}
       >

@@ -177,7 +177,7 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
     role: "Homeowner - Gulzarpet",
     company: "Anantapur",
     comment:
-      "SN Constructions handled our residential duplex build in Georgepet with outstanding precision. Their young, energetic team was friendly, highly adaptive, and completed our gorgeous custom interiors ahead of schedule.",
+      "Arka infra & interiors handled our residential duplex build in Georgepet with outstanding precision. Their young, energetic team was friendly, highly adaptive, and completed our gorgeous custom interiors ahead of schedule.",
     rating: 5,
     avatarUrl:
       "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?auto=format&fit=crop&w=150&h=150&q=80",
@@ -188,7 +188,7 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
     role: "Managing Director",
     company: "Reddy Minerals & Exports, Anantapur",
     comment:
-      "Their modern planning layouts and structural integrity are top-tier. From advanced 3D walk-through planning to the final premium ceiling installation, the SN team executed our workspace with perfection.",
+      "Their modern planning layouts and structural integrity are top-tier. From advanced 3D walk-through planning to the final premium ceiling installation, the Arka infra & interiors team executed our workspace with perfection.",
     rating: 5,
     avatarUrl:
       "https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=150&h=150&q=80",
@@ -199,7 +199,7 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
     role: "Homeowner - LakshmiNagar",
     company: "Anantapur",
     comment:
-      "We wanted a signature, sleek, high-contrast cafe ambiance on Court Road. SN Constructions delivered structural planning and bespoke interior finishing that completely exceeded our high expectations.",
+      "We wanted a signature, sleek, high-contrast cafe ambiance on Court Road. Arka infra & interiors delivered structural planning and bespoke interior finishing that completely exceeded our high expectations.",
     rating: 5,
     avatarUrl:
       "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?auto=format&fit=crop&w=150&h=150&q=80",
@@ -211,7 +211,7 @@ export const TIMELINE_DATA: TimelineItem[] = [
     year: "2024",
     title: "The Vision & Challenge Born",
     description:
-      "A group of passionate young engineers and designers co-found SN Constructions. Eager to challenge traditional brick-and-mortar ideas, we began with a simple but fiery motto: 'Trust the process, we build your dream.'",
+      "A group of passionate young engineers and designers co-found Arka infra & interiors. Eager to challenge traditional brick-and-mortar ideas, we began with a simple but fiery motto: 'Trust the process, we build your dream.'",
   },
   {
     year: "2025",
